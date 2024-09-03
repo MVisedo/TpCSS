@@ -1,0 +1,171 @@
+
+
+header{
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+section{
+    background-color: white;
+    border: 5px solid grey;
+    border-radius: 10px;
+
+    padding: 1rem;
+    margin: 2rem;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: rgb(78, 78, 78);
+    text-align: left;
+    
+
+    border:0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.Parrafo{
+    color: rgb(100, 99, 99);
+    font-size: 1rem;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+    
+    
+}
+
+.Cita{
+    background-color: rgb(245, 244, 244);
+    padding: 0.5rem;
+    margin: 0;
+
+    font-size: 1rem;
+    text-align: left;
+    color: gray;
+    font-style: italic;
+
+    border:0px;
+    border-left: 4px;
+    
+    border-style: solid;
+    border-color: rgb(177, 176, 176);
+}
+
+.Caja1{
+    color: rgb(73, 73, 73);
+    font-size: 1rem;
+    text-align: left;
+    
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    border-color:rgb(168, 168, 168);
+    box-shadow: 3px 3px 10px 0px rgb(56, 56, 56);
+    
+}
+
+.Caja2{ 
+    background-color: rgb(193, 235, 255);
+    margin-top: 1rem;
+
+    border-width: 5px; 
+    border-color:rgb(114, 114, 114);
+}
+
+.Relativo{
+    color: rgb(73, 73, 73);
+    font-size: 1rem;
+    text-align: left;
+    
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(193, 235, 255);
+
+    position: relative;
+    top: 0px;
+    right: 0px;
+    
+}
+.Absoluto{
+    color: rgb(73, 73, 73);
+    font-size: 1rem;
+    text-align: left;
+    
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(96, 205, 255);
+
+    border-radius: 100px;
+    width: 250px;
+    position: absolute;
+    right:10%;
+    top: 75%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 0.5rem;
+}
+.grid-item{
+    color: rgb(73, 73, 73);
+    background-color: rgb(96, 205, 255);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.Animacion{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 193, 128);
+    transition: 1s;
+    margin: 0.5rem;
+}
+.Animacion:hover{
+    background-color:  rgb(96, 205, 255);
+}
+.Mover{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(96, 205, 255) ;
+    border-radius: 100%;
+    margin: 0.5rem;
+    animation: Mover 2s infinite;
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(203, 236, 252);
+    }
+    h2{
+        font-size: 1rem;
+    }
+    section{
+        width: 400px;
+        padding: 0.5rem;
+    }
+}
+@keyframes Mover {
+    0%{
+        transform:translateX(0) ;
+    }
+    50%{
+        transform:translateX(200px) ;
+    }
+    100%{
+        transform:translateX(0) ;
+    }
+    
+}
